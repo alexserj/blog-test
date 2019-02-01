@@ -1,7 +1,9 @@
-class CommentsController < ApplicationController
-  before_action :get_article
+# frozen_string_literal: true
 
-  http_basic_authenticate_with name: "alex", password: "1111", only: :destroy
+class CommentsController < ApplicationController
+  before_action :article
+
+  http_basic_authenticate_with name: 'alex', password: '1111', only: :destroy
 
   def create
     @comment = @article.comments.create(comment_params)
@@ -20,7 +22,7 @@ class CommentsController < ApplicationController
     params.require(:comment).permit(:commenter, :body)
   end
 
-  def get_article
+  def article
     @article = Article.find(params[:article_id])
   end
 end
