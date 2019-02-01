@@ -1,5 +1,5 @@
-class AddArticlesToUsers < ActiveRecord::Migration[5.2]
+class AddArticlesToUser < ActiveRecord::Migration[5.2]
   def change
-    add_reference :articles, :users, foreign_key: true, index: true
+    add_reference :articles, :user, foreign_key: true
   end
 end

@@ -3,6 +3,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
     create_table :users do |t|
       t.string :name
       t.string :email
+      # t.references :article, foreign_key: true
+      # t.references :comment, foreign_key: true
 
       t.timestamps
     end
