@@ -5,5 +5,9 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :users do
+    resources :articles
+  end
+
   root 'welcome#index'
 end
