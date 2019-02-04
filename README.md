@@ -1,24 +1,26 @@
-# README
+# Small microblog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Purpose of this microblog is to cover some assembly Ruby on Rails development
+methods.
 
-Things you may want to cover:
+# Some system specs
 
-* Ruby version
+* Ruby version: MRI ruby-2.5.1
 
-* System dependencies
+* Rails version: 5.2.2
 
-* Configuration
+# Purpose of microblog
 
-* Database creation
+In this microblog you can create articles, as well as other users can leave
+comments under your articles.
 
-* Database initialization
+# Things to do
 
-* How to run the test suite
+Right in the next update I will add authentication and registration
+possibility for each separate user.
 
-* Services (job queues, cache servers, search engines, etc.)
+In later updates I will add:
 
-* Deployment instructions
+* possibility to attach photos to posts
 
-* ...
+* create more eye-friendly UI
